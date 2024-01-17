@@ -12,24 +12,30 @@ public class Calculator {
             System.out.println("Enter second number");
             double j = input.nextDouble();
             input.nextLine();
+            System.out.println("List of available operators");
+
+            System.out.println("1.ADD");
+            System.out.println("2.SUBSTARCTION");
+            System.out.println("3.MULTIPLICATION");
+            System.out.println("4.DIVISION");
 
             System.out.println("Enter Operator");
             String operator = input.nextLine();
 
             switch (operator) {
-                case "ADD":
+                case '1':
                     result = i + j;
                     System.out.println("Result: " + result);
                     break;
-                case "SUB":
+                case '2':
                     result = i - j;
                     System.out.println("Result: " + result);
                     break;
-                case "Multiply":
+                case '3':
                     result = i * j;
                     System.out.println("Result: " + result);
                     break;
-                case "Division":
+                case '4':
                     result = i / j;
                     System.out.println("Result: " + result);
                     break;
