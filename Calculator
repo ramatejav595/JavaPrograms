@@ -1,0 +1,42 @@
+package org.example;
+
+import java.util.Scanner;
+
+public class Calculator {
+    public static void main(String[] args) {
+
+            Scanner input = new Scanner(System.in);
+            double result;
+            System.out.println("Enter first number");
+            double i = input.nextDouble();
+            System.out.println("Enter second number");
+            double j = input.nextDouble();
+            input.nextLine();
+
+            System.out.println("Enter Operator");
+            String operator = input.nextLine();
+
+            switch (operator) {
+                case "ADD":
+                    result = i + j;
+                    System.out.println("Result: " + result);
+                    break;
+                case "SUB":
+                    result = i - j;
+                    System.out.println("Result: " + result);
+                    break;
+                case "Multiply":
+                    result = i * j;
+                    System.out.println("Result: " + result);
+                    break;
+                case "Division":
+                    result = i / j;
+                    System.out.println("Result: " + result);
+                    break;
+                default:
+                    System.out.println("Invalid Operator");
+                    System.exit(0);
+            }
+        }
+    }
+
